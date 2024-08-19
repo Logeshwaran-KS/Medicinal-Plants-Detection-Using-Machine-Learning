@@ -3,7 +3,7 @@
 
 Medicinal Plants Detection using Machine Learning is to Identify the Medicinal Plants through images by Segmentation, Gray Scale Conversion, Feature Extractions like GLCM, Gabor and LBP. Later the data is Trained with Multiple Model to track the Performace and get the suitable Model for Prediction
 
-The Complete description is given below:
+The Complete description is given below :arrow_down:
 ## ***Data Collection***  
 The dataset is download and feature extracted from . It has 30 Species of different image size, named with normal and botanical name.
 
@@ -38,10 +38,11 @@ Feature are extracted for both Segmented and Segmented + GrayScaled image. Here,
   GLCM computes how often pairs of pixel with specific values and in a specified spatial relationship occur in an image, creating a matrix that represents the frequency of these combinations. From this matrix, various texture features like contrast, correlation, energy, and homogeneity can be derived.
 ### ***Gabor***
   Gabor filters operate by convolving the image with a sinusoidal plane wave modulated by a Gaussian envelope. The filter is oriented in various directions and scales, making it sensitive to specific features in the image, such as edges and textures.
-Finally 62 features are extracted and stored in the CSV file for the later purpose
+
+Finally 62 features of each image is extracted and stored in the FeatureExtracted CSV file for the later purpose. If FeatureExtracted File required, please contact (information provided at the end)
 
 ## ***Feature Reduction***
-The CSV file is splited into X and Y (Label) for remove irrelavant feature. Two techiques are used Principle Component Analysis and StandardScaler
+The FeatureExtracted CSV file is splited into X and Y (Label) and splitted into train and test data. For removing irrelavant feature, Two techiques are used Principle Component Analysis and StandardScaler
 ### ***Principal Component Analysis***
   PCA identifies the directions (principal components) in which the data varies the most and projects the data onto these directions. This reduces the dimensionality of the data while retaining most of its variance.
 ### ***StandardScaler***
@@ -58,8 +59,10 @@ Support Vector Machine gives the highest perfomance of accuracy 99% among all th
 ## ***Prediction***
 Real time data can be used for prediction with the help of saved PCA, SC and SVM Model
 ## Contact
-If you have any questions, suggestions, or feedback, feel free to contact me:
-- **Email:** logeshwaranks01@gmail.com
-- **LinkedIn:** [logeshwaran-ks](https://www.linkedin.com/in/logeshwaran-ks/)
+If you have any questions, data requirement, suggestions, or feedback, feel free to contact me:
+
+:email: **Email:** logeshwaranks01@gmail.com
+
+**LinkedIn:** [logeshwaran-ks](https://www.linkedin.com/in/logeshwaran-ks/)
 
 **Thank You for Checking Out This Project!**  :smile:
