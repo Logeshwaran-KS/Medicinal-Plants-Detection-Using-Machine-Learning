@@ -5,7 +5,7 @@ Medicinal Plants Detection using Machine Learning is to Identify the Medicinal P
 
 The Complete description is given below :arrow_down:
 ## ***Data Collection***  
-The dataset is download and feature extracted from . It has 30 Species of different image size, named with normal and botanical name.
+The dataset was downloaded and features were extracted from images representing 30 different species, each varying in size. The images are labeled with both common names and botanical names, providing a comprehensive set of data for classification tasks.
 
 URL - [Medicinal Leaf Dataset](https://data.mendeley.com/datasets/nnytj2v3n5/1)
 ## ***Pre Processing***
@@ -38,7 +38,9 @@ Feature are extracted for both Segmented and Segmented + GrayScaled image. Here,
   GLCM computes how often pairs of pixel with specific values and in a specified spatial relationship occur in an image, creating a matrix that represents the frequency of these combinations. From this matrix, various texture features like contrast, correlation, energy, and homogeneity can be derived.
 ### ***Gabor***
   Gabor filters operate by convolving the image with a sinusoidal plane wave modulated by a Gaussian envelope. The filter is oriented in various directions and scales, making it sensitive to specific features in the image, such as edges and textures.
-
+### ***Color Moments***
+  They typically include the mean, standard deviation, and skewness of the pixel values within each color channel (e.g., RGB), capturing essential color characteristics. These moments are effective in image retrieval and classification tasks due to their ability to represent color features compactly
+  
 Finally 62 features of each image is extracted and stored in the FeatureExtracted CSV file for the later purpose. If FeatureExtracted File required, please contact (information provided at the end)
 
 ## ***Feature Reduction***
@@ -55,9 +57,9 @@ Here, the data is trained with different model to obtained high performed model.
 </div>
 
 ### ***Support Vector Machine***
-Support Vector Machine gives the highest perfomance of accuracy 99% among all the other
+Support Vector Machine (SVM) demonstrated the highest performance with an accuracy of 99%, outperforming all other algorithms used in the project. Its ability to find the optimal hyperplane that maximizes the margin between different classes makes SVM particularly effective for this classification task. This exceptional accuracy highlights SVM's robustness and suitability for complex data patterns.
 ## ***Prediction***
-Real time data can be used for prediction with the help of saved PCA, SC and SVM Model
+Real-time data can be utilized for prediction by leveraging pre-trained models, including Principal Component Analysis (PCA) for dimensionality reduction, StandardScaler (SC) for data normalization, and a Support Vector Machine (SVM) for classification. The process begins with the incoming data being preprocessed using the saved StandardScaler to ensure consistency with the training data. Next, the data is transformed using the saved PCA model, reducing its dimensionality while retaining the most significant features. Finally, the transformed data is fed into the saved SVM model to generate predictions in real-time. This approach allows for efficient and accurate predictions on new, unseen data by utilizing the computational efficiency and learned patterns from the pre-trained models.
 ## Contact
 If you have any questions, data requirement, suggestions, or feedback, feel free to contact me:
 
